@@ -8,7 +8,7 @@ In Module 2 Lab 3, you'll deploy the Streamlit app you have previously built and
 1. You need to upload this lab’s files into a Github repository you will create as follows.
 2. Log into your GitHub account
 3. On the top-right corner click on the (+) button and select "New repository"
-4. Go to the "Repository name*" and type the repository name. For simplicity, let's use avalanche
+4. Go to the "Repository name*" and type the repository name. For simplicity, let's use `avalanche`
 5. Scroll down and check the radio button for the option "Public"
 6. Leave the other options by their default setting
 7. Click on "Create repository"
