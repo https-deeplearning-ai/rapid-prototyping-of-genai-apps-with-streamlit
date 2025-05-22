@@ -16,12 +16,12 @@ You'll essentially follow the same steps as in the previous lab (M2 Lab 3) but w
 ## Upload the App files
 1. In your computer, go to the folder where you downloaded and unzipped the course’s GitHub repository. 
 2. Go to folder M2/Lab4. This folder contains the Streamlit app files
-2. Now go to the GitHub repository folder created for this Lab. For example, if the GitHub user "learner01" created the repository named "avalanche-with-snowflake", the repository should be:
+3. Now go to the GitHub repository folder created for this Lab. For example, if the GitHub user "learner01" created the repository named "avalanche-with-snowflake", the repository should be:
 ```
   		learner01/avalanche-with-snowflake
 ```
-3. In the repository, upload the app files. If the repository is new, click on "uploading an existing file". If the repository already contains some files, above the list of files, select the "Add file" dropdown menu and click "Upload files".
-4. Drag and drop the app files from the folder ```M2/Lab4``` into the GitHub repository. You need to drag and drop the following files:
+4. In the repository, upload the app files. If the repository is new, click on "uploading an existing file". If the repository already contains some files, above the list of files, select the "Add file" dropdown menu and click "Upload files".
+5. Drag and drop the app files from the folder ```M2/Lab4``` into the GitHub repository. You need to drag and drop the following files:
    
     a. File ```README.md```
 
@@ -30,7 +30,7 @@ You'll essentially follow the same steps as in the previous lab (M2 Lab 3) but w
     c. File ```streamlit_app.py```
 
 
-5. Once you have dragged and dropped all the files into the repository, click on the green button "Commit changes"
+6. Once you have dragged and dropped all the files into the repository, click on the green button "Commit changes"
 
 You are set to move on.
 
