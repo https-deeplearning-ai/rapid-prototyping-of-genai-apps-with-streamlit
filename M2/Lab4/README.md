@@ -8,7 +8,7 @@ You'll essentially follow the same steps as in the previous lab (M2 Lab 3) but w
 1. You need to upload this lab’s files into a Github repository you will create as follows.
 2. Log into your GitHub account
 3. On the top-right corner click on the (+) button and select "New repository"
-4. Go to the "Repository name*" and type the repository name. For this lab, you can use avalanche-with-snowflake
+4. Go to the "Repository name*" and type the repository name. For this lab, you can use `avalanche-with-snowflake`
 5. Scroll down and check the radio button for the option "Public"
 6. Leave the other options by their default setting
 7. Click on "Create repository"
