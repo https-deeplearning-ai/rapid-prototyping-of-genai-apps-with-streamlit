@@ -69,5 +69,6 @@ warehouse = "COMPUTE_WH"
 database = "AVALANCHE_DB"
 schema = "PUBLIC"
 ```
-6. Click on "Deploy" and give it a few moments to spin up your new app
-7. Once deployed, you will be provided with a link where you can view and share your new app.
+6. Click on "Save". You will return to the "Deploy an app" window.
+7. Click on "Deploy" and give it a few moments to spin up your new app
+8. Once deployed, you will be provided with a link where you can view and share your new app.
