@@ -60,14 +60,14 @@ To deploy the app you’ve just built:
 4. In the Main File Path field, click on the drop-down menu to drill down to the file for the streamlit_app.py file that you want to deploy
 5. Click on "Advanced settings". In the pop up window, write the following information in the Secrets box:
 ```   
-    [connections.snowflake]
-    account = "xxxxxxx-xxxxxxxx"
-    user = "your_username"
-    password = "xxxxxxxxxx"
-    role = "ACCOUNTADMIN"
-    warehouse = "COMPUTE_WH"
-    database = "AVALANCHE_DB"
-    schema = "PUBLIC"
+[connections.snowflake]
+account = "xxxxxxx-xxxxxxxx"
+user = "your_username"
+password = "xxxxxxxxxx"
+role = "ACCOUNTADMIN"
+warehouse = "COMPUTE_WH"
+database = "AVALANCHE_DB"
+schema = "PUBLIC"
 ```
 6. Click on "Deploy" and give it a few moments to spin up your new app
 7. Once deployed, you will be provided with a link where you can view and share your new app.
