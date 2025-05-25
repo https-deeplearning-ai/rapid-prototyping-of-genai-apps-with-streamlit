@@ -35,7 +35,7 @@ You'll essentially follow the same steps as in the previous lab (M2 Lab 3) but w
 You are set to move on.
 
 ## Deploying the app
-To deploy your apps to the cloud, you’ll need to sign up for a Streamlit Community Cloud account using your Github login, so that we can link the two accounts for easy deployment. Please log into your GitHub account before you follow these steps.
+To deploy your apps to the cloud, you’ll need to sign up for a Streamlit Community Cloud account using your Github login, so that you can link the two accounts for easy deployment. Please log into your GitHub account before you follow these steps.
 
 1. Navigate to Streamlit Community Cloud
 2. Click on “Join Community Cloud”
