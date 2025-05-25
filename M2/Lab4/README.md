@@ -2,7 +2,7 @@
 
 In Module 2 Lab 4, you'll deploy the Streamlit app to the [Streamlit Community Cloud](https://streamlit.io/cloud) and this time we'll be able to access Snowflake data directly from the app. 
 
-You'll essentially follow the same steps as in the previous lab (M2 Lab 3) but with minor modifications. We'll guide you through the steps and show you the changes.
+You'll essentially follow the same steps as in the previous lab (M2 Lab 3) but with minor modifications. You'll be guided through the steps and show you the changes.
 
 ## Create your own GitHub repository for this Lab
 1. You need to upload this lab’s files into a Github repository you will create as follows.
