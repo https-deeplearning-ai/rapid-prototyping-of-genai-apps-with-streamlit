@@ -27,7 +27,7 @@ The rest of this lab will focus on how we can add additional context to our prom
 
 Since you’re building an app around the Avalanche Dataset, one of the easiest things we can do to augment our prompt is to provide the entire dataset as context to our prompts. However, it would be really clunky to copy and paste an entire dataframe, you’ll use code to help create additional context for your prompt. 
 
-In the first part of the lab, you walked through the section of code that reads in our customer reviews as a pandas dataframe. You then converted it to a string and stored the output in a variable named dataframe_context that you can feed to our prompt in a prompt section titled “context”. 
+In the first part of the lab, you walked through the section of code that reads in our customer reviews as a pandas dataframe. You then converted it to a string and stored the output in a variable named dataframe_context that you can feed to your prompt in a prompt section titled “context”. 
 
 Here's the prompt:
 ```
