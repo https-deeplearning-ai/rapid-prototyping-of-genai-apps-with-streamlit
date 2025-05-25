@@ -1,6 +1,6 @@
 # M3 Lab 1 Using Data Augmentation to Build a Simple Chatbot
 
-In Module 3 Lab 1, we'll start this lab with the prototype we built in Module 2, where we have already created and deployed a prototype that performs sentiment analysis and can visualize the results grouped by time period and product
+In Module 3 Lab 1, you'll start this lab with the prototype you built in Module 2, where you have already created and deployed a prototype that performs sentiment analysis and can visualize the results grouped by time period and product
 
 
 You can think of this method as building an augmented chatbot on structured data; we're applying the string version of the DataFrame as context directly into the prompt.
@@ -25,9 +25,9 @@ The lab video will walk you through the code in more detail.
 
 The rest of this lab will focus on how we can add additional context to our prompt in order to assist our chatbot in returning better results. 
 
-Since we’re building an app around the Avalanche Dataset, one of the easiest things we can do to augment our prompt is to provide the entire dataset as context to our prompts. However, it would be really clunky to copy and paste an entire dataframe, we’ll use code to help create additional context for our prompt. 
+Since you’re building an app around the Avalanche Dataset, one of the easiest things we can do to augment our prompt is to provide the entire dataset as context to our prompts. However, it would be really clunky to copy and paste an entire dataframe, you’ll use code to help create additional context for your prompt. 
 
-In the first part of the lab, we walked through the section of code that reads in our customer reviews as a pandas dataframe. We then converted it to a string and stored the output in a variable named dataframe_context that we can feed to our prompt in a prompt section titled “context”. 
+In the first part of the lab, you walked through the section of code that reads in our customer reviews as a pandas dataframe. You then converted it to a string and stored the output in a variable named dataframe_context that you can feed to our prompt in a prompt section titled “context”. 
 
 Here's the prompt:
 ```
