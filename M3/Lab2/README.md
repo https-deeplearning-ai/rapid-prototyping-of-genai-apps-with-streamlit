@@ -1,6 +1,6 @@
 # M3 Lab 2 Setting up a RAG pipeline using Cortex Search
 
-In Module 3 Lab 2, we're setting up the RAG pipeline using Cortex Search. We’ll build on the app and augmented prompt that we built in the previous lab, so make sure you complete that lab before attempting this one. 
+In Module 3 Lab 2, you're setting up the RAG pipeline using Cortex Search. you’ll build on the app and augmented prompt that you built in the previous lab, so make sure you complete that lab before attempting this one. 
 
 ## Running the Notebook
 
