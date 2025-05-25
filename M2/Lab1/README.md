@@ -1,6 +1,6 @@
 # M2 Lab 1 
 
-In this lab, we'll prepare the Avalanche data namely the Customer Reviews subset from an unstructured format to a structured format in Snowflake Notebooks.
+In this lab, you'll prepare the Avalanche data namely the Customer Reviews subset from an unstructured format to a structured format in Snowflake Notebooks.
 
 ## Setup
 
@@ -30,7 +30,7 @@ To read contents of a file:
 
 ## Data Processing
 
-Next, we'll use the structured data to create a bar chart to visualize the daily sentiment score and the product sentiment score.
+Next, you'll use the structured data to create a bar chart to visualize the daily sentiment score and the product sentiment score.
 
 - PARSE_DOCUMENT function to extract text and data from unstructured DOCX files.
 - SENTIMENT function to calculate the sentiment score of extracted customer review text
@@ -38,7 +38,7 @@ Next, we'll use the structured data to create a bar chart to visualize the daily
 - TRANSLATE: function to translate given text from/to any supported language
 
 ## Data Visualization
-Then, we'll create a bar chart to visualize the daily sentiment score and the product sentiment score.
+Then, you'll create a bar chart to visualize the daily sentiment score and the product sentiment score.
 
 
 ## Running the Notebook
