@@ -1,6 +1,6 @@
 # M2 Lab 2 Deploying Your Prototype Internally on Snowflake
 
-In Module 2 Lab 2, we're aggregating all that we've built in prior labs into this Streamlit app that we'll deploy to Streamlit in Snowflake (SiS).
+In Module 2 Lab 2, you're aggregating all that you've built in prior labs into this Streamlit app that you'll deploy to Streamlit in Snowflake (SiS).
 
 **Before starting this lab, make sure you have created the Avalanche database, schema and stage that we built in the previous lab.**
 1. Log in to Snowflake Snowsight
@@ -18,4 +18,4 @@ In Module 2 Lab 2, we're aggregating all that we've built in prior labs into thi
 9. Paste this code into the left code editor panel where you just deleted the example code from. 
 10. Click on Run
 
-We’ll walk through this code together in more detail in the accompanying lab walkthrough video for Module 2 Lab 2. 
+You’ll walk through this code in more detail with the help of the accompanying lab walkthrough video for Module 2 Lab 2. 
