@@ -1,10 +1,10 @@
 # M3 Lab 3
 
-In this lab, we'll build a RAG chatbot app to answer questions about unstructured data (*i.e.* content from DOCX files). 
+In this lab, you'll build a RAG chatbot app to answer questions about unstructured data (*i.e.* content from DOCX files). 
 
-Briefly, the RAG pipeline that we'll use is handled by [Cortex Search](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview).
+Briefly, the RAG pipeline that you'll use is handled by [Cortex Search](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview).
 
-Here are 2 parameters that we'll tweak:
+Here are 2 parameters that you'll tweak:
 - *chunk size*
 - *chunk overlap*
 
