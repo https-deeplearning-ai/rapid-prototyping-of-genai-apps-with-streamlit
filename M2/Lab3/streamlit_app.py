@@ -15,6 +15,7 @@ st.title("🏔️ Avalanche Data Set")
 
 # df = session.sql("SELECT * FROM AVALANCHE.PUBLIC.CUSTOMER_REVIEWS").to_pandas()
 df = pd.read_csv("data/customer_reviews.csv")
+# df = st.connection("snowflake").query("SELECT * FROM avalanche_db.public.customer_reviews;")
 
 # Ensure SENTIMENT_SCORE is numeric
 df['SENTIMENT_SCORE'] = pd.to_numeric(df['SENTIMENT_SCORE'])
