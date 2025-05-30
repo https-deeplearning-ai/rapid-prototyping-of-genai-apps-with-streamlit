@@ -6,7 +6,7 @@ Briefly, you'll take the pre-processed version of the Avalanche data and read it
 
 
 ## Install prerequisite libraries
-To follow along, make sure that you have all the prerequisite libraries installed. For your convenience, a list is provided in the requirements.txt file in the GitHub [repo](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master/M1/Lab2).
+To follow along, make sure that you have all the prerequisite libraries installed. For your convenience, a list is provided in the requirements.txt file in the [GitHub repo](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master).
 
 It is recommended that you work locally on your computer. Once there, using the command line, install the packages via pip as follows:
 ```
