@@ -8,16 +8,19 @@ Briefly, you'll take the pre-processed version of the Avalanche data and read it
 ## Install prerequisite libraries
 To follow along, make sure that you have all the prerequisite libraries installed. For your convenience, a list is provided in the requirements.txt file in the GitHub repo.
 
-It is recommended that you create your own environment in your computer. Once you have it, install the packages via pip as follows:
+It is recommended that you work locally on your computer. Once there, install the packages via pip as follows:
 ```
 pip install -r requirements.txt
 ```
 
 ## Run apps
 
-To run the Streamlit app for [Module 1 Lab 2](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master/M1/Lab2), navigate to:
-- Folder M1/Lab 2
-- From within this directory, run the following from your command line:
+To run the Streamlit app for [Module 1 Lab 2](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master/M1/Lab2), follow these steps:
+- Download the course repo as a .ZIP file from [here](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master).
+- Unzip the downloaded repo.
+- Place the unzipped folders on the working folder you choose in your computer.
+- Go to M1/Lab2 in your working folder.
+- From within this folder, run the following from your command line:
 ```
 streamlit run streamlit_app.py
 ```
