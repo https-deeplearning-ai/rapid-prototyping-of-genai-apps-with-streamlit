@@ -1,4 +1,4 @@
-#  Module 1 Lab 1 - Interact with the Streamlit Demo
+#  Module 1 Lab 1 instructions - Interact with the Streamlit Demo
 
 In this first lab, you'll interact with the final demo app that you'll build out in this course, which is a dashboard app for the customer reviews subset of the Avalanche data set.
 
