@@ -5,6 +5,7 @@ In this first lab, you'll interact with the final demo app that you'll build out
 The next video will walk you through how to run Module 1 Lab 1. You can follow along in the lab by downloading the relevant files from the GitHub repo:
 
 🐙 The Avalanche Dataset: https://github.com/https-deeplearning-ai/rapid-prototyping-with-streamlit/tree/master/Avalanche
+
 Jupyter notebook: https://github.com/https-deeplearning-ai/rapid-prototyping-with-streamlit/blob/master/M1/Lab1/RAP_M1_Lab1.ipynb
 
 🕹️ You can see the end product of what that you’re building in this lab at the following URL: 
