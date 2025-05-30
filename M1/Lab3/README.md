@@ -6,8 +6,8 @@ In this third lab, you'll continue with the code from Lab 2 and build a function
 
 Please verify that you have cloned the [GitHub repository](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master). Once you have done it, follow these steps:
 
-- **Step 1.** Go to folder M1, then
-- **Step 2.** Go to folder Lab3
-- **Step 3.** Open the file streamlit_app.py using your editor of preference.
+1. Go to folder M1, then
+2. Go to folder Lab3
+3. Open the file streamlit_app.py using your editor of preference.
 
 Follow along with the lab video to add additional functionality to your new app.
