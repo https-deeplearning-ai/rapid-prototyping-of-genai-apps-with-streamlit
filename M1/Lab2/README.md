@@ -20,7 +20,7 @@ To run the Streamlit app for [Module 1 Lab 2](https://github.com/https-deeplearn
 - Unzip the downloaded repo.
 - Place the unzipped folders on the working folder of your preference, in your computer.
 - Go to M1/Lab2 in your working folder.
-- From within this folder, run the following from the command line:
+- From within this folder, run the following using the command line:
 ```
 streamlit run streamlit_app.py
 ```
