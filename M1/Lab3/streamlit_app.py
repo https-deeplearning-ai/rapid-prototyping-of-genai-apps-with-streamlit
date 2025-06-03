@@ -13,7 +13,6 @@ selected_products = st.multiselect("Select product(s)", unique_products, unique_
 st.write("Selected products:", list(selected_products))
 
 st.dataframe(df[df.PRODUCT.isin(selected_products)])
-# st.dataframe(df.head())
 
 # Calendar widget
 st.subheader("Dates")
