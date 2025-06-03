@@ -4,7 +4,7 @@ In this third lab, you'll continue with the code from Lab 2 and build a function
 
 ## Access Lab 3 Python file
 
-Please verify that you have cloned the [GitHub repository](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master). Once you have done it, follow these steps:
+Please verify that you have downloaded the [GitHub repository](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/tree/master). Once you have done it, follow these steps:
 
 1. Go to folder M1, then
 2. Go to folder Lab3
