@@ -19,7 +19,7 @@ st.subheader("Dates")
 
 df["DATE"] = pd.to_datetime(df["DATE"])
 
-d = st.date_input(
+date_range = st.date_input(
     "Select dates",
     (df["DATE"].min().date(), df["DATE"].median().date() ),
     df["DATE"].min().date(),
@@ -27,9 +27,9 @@ d = st.date_input(
 )
     
 # Check if both dates are specified
-if len(d)==2:
-    start_date = pd.to_datetime(d[0])
-    end_date = pd.to_datetime(d[1])
+if len(date_range)==2:
+    start_date = pd.to_datetime(date_range[0])
+    end_date = pd.to_datetime(date_range[1])
     
     st.write("Selected dates:", start_date, end_date)
     
