@@ -12,11 +12,9 @@ CREATE STAGE IF NOT EXISTS avalanche_db.avalanche_schema.customer_reviews
   ENCRYPTION = (TYPE = 'SNOWFLAKE_SSE')
   DIRECTORY = (ENABLE = true);
 
-
 -- STEP 3
 -- List the contents of the newly created stage
 ls @avalanche_db.avalanche_schema.customer_reviews;
-
 
 -- STEP 4
 -- Read single file
