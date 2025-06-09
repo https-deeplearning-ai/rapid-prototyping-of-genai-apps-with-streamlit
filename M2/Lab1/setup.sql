@@ -4,7 +4,7 @@ CREATE DATABASE IF NOT EXISTS avalanche_db;
 CREATE SCHEMA IF NOT EXISTS avalanche_schema;
 
 -- STEP 2
--- Option 1: Manual upload to Stage
+-- Manual upload to Stage
 -- Create the stage for storing our files
 -- Uncomment code block below for this option:
 --
