@@ -7,7 +7,6 @@ CREATE SCHEMA IF NOT EXISTS avalanche_schema;
 -- Manual upload to Stage
 -- Create the stage for storing our files
 -- Uncomment code block below for this option:
---
 CREATE STAGE IF NOT EXISTS avalanche_db.avalanche_schema.customer_reviews
   ENCRYPTION = (TYPE = 'SNOWFLAKE_SSE')
   DIRECTORY = (ENABLE = true);
@@ -19,7 +18,6 @@ ls @avalanche_db.avalanche_schema.customer_reviews;
 -- STEP 4
 -- Read single file
 -- Uncomment lines below to use:
---
 -- SELECT
 --   SNOWFLAKE.CORTEX.PARSE_DOCUMENT(
 --     @avalanche_db.avalanche_schema.customer_reviews,
