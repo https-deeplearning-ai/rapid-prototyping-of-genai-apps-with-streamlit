@@ -30,8 +30,6 @@ ls @avalanche_db.avalanche_schema.customer_reviews;
 
 
 -- STEP 4
--- USAGE
--- 
 -- Read single file
 -- Uncomment lines below to use:
 --
@@ -41,21 +39,3 @@ ls @avalanche_db.avalanche_schema.customer_reviews;
 --     'review-001.docx',
 --     {'mode': 'layout'}
 --   ) AS layout;
-
--- Read multiple files into a table
--- Uncomment lines below to use:
---
--- WITH files AS (
---   SELECT 
---     REPLACE(REGEXP_SUBSTR(file_url, '[^/]+$'), '%2e', '.') as filename
---   FROM DIRECTORY('@avalanche_db.avalanche_schema.customer_reviews')
---   WHERE filename LIKE '%.docx'
--- )
--- SELECT 
---   filename,
---   SNOWFLAKE.CORTEX.PARSE_DOCUMENT(
---     @avalanche_db.avalanche_schema.customer_reviews,
---     filename,
---     {'mode': 'layout'}
---   ):content AS layout
--- FROM files;
