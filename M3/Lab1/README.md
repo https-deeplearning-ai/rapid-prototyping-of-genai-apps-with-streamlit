@@ -15,7 +15,7 @@ You can think of this method as building an augmented chatbot on structured data
     - Keep all other settings at default and click on “Create”
 4. An example Streamlit app should appear- delete all the existing code from the example app
 5. Copy the code from the streamlit_app.py file on our repo:
-https://github.com/https-deeplearning-ai/rapid-prototyping-with-streamlit/blob/master/M1/Lab3/streamlit_app.py
+https://github.com/https-deeplearning-ai/rapid-prototyping-with-streamlit/blob/master/M3/Lab1/streamlit_app.py
 6. Paste the streamlit_app.py code into the left code of the Snowflake Streamlit editor panel
 7. Click on Run to spin up the app. 
 
