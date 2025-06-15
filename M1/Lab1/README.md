@@ -42,3 +42,31 @@ Use these questions to help narrow your focus:
 - What existing solutions frustrate people?
 - Where and how would they use your product?
 
+## Step 5: Define MVP Metrics
+Think about metrics like:
+
+- Behavioral: Daily/weekly users, feature usage
+- Business: Sign-ups, conversions, revenue
+- Qualitative: User feedback, support tickets
+- Leading Indicators: Early signs of success
+
+## Step 6: Prioritize Features
+Ask the AI:
+```
+Help me identify the must-have features and separate them from the nice-to-haves.
+```
+
+## Final Reminder
+Generative AI is great for:
+
+- Brainstorming
+- Generating boilerplate code
+- Debugging
+- Planning features
+
+But you’ll need human judgment for:
+
+- Validating ideas
+- UX decisions
+- Business logic
+- Verifying AI output
