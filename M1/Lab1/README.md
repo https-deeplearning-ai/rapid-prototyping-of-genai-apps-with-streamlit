@@ -25,3 +25,20 @@ Share these principles to help the AI guide you more effectively:
 - Determine your target audience
 - Identify metrics for success
 - Prioritize must-have features for the MVP
+
+## Step 3: Brainstorm With the AI
+Let the AI ask you questions or propose features based on the guidelines. If it doesn't, prompt it with:
+```
+Walk through each principle with me to help me figure this out.
+```
+
+## Step 4: Explore Your Domain and Audience
+Use these questions to help narrow your focus:
+
+- What domain (e.g., fitness, learning) interests you?
+- What problems do you see regularly in this domain?
+- Who feels this pain point the most?
+- What would success look like?
+- What existing solutions frustrate people?
+- Where and how would they use your product?
+
