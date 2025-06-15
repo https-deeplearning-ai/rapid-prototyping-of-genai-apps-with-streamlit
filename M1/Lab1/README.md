@@ -18,3 +18,10 @@ I need help coming up with an app that will help students learn linear algebra.
 My students struggle with math anxiety and need visual and hands-on tools.
 Please help me brainstorm a prototype in bullet point format.
 ```
+## Step 2: Provide MVP Guidelines
+Share these principles to help the AI guide you more effectively:
+
+- Define your end goal
+- Determine your target audience
+- Identify metrics for success
+- Prioritize must-have features for the MVP
