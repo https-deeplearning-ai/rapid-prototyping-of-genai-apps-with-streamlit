@@ -4,7 +4,7 @@ In this lab, you'll prepare the Avalanche data namely the Customer Reviews subse
 
 ## Setup
 
-Follow the instructions provided in `setup.sql` to create a database, schema, stage as well as upload files for the Avalanche data.
+Follow the instructions provided in `setup.sql` to create a database, schema, stage as well as read files for the Avalanche project.
 
 ## Using the Data
 
