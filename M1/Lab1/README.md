@@ -4,10 +4,17 @@ In this lab, you'll practice using Generative AI as a co-creator to build a Mini
 
 ## Step 1: Define Your Prompt
 Use this template to help frame your request to the AI agent of your choice:
-
 ```
 You are a [relevant role/expert].
 I need help with [specific task/problem].
 My situation is [relevant context/background].
 Please [specific request] in [desired format].
+```
+
+Example:
+```
+You are a high school math teacher that wants to integrate technology into your classroom.
+I need help coming up with an app that will help students learn linear algebra.
+My students struggle with math anxiety and need visual and hands-on tools.
+Please help me brainstorm a prototype in bullet point format.
 ```
