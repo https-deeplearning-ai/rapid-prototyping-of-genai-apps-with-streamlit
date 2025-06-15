@@ -5,7 +5,7 @@ from snowflake.snowpark.context import get_active_session
 
 # --- Constants and Configuration ---
 MODELS = ['claude-3-5-sonnet', 'mistral-large', 'gemma-7b', 'llama3-8b']
-CONTEXT_TABLE = "AVALANCHE_DB.PUBLIC.CUSTOMER_REVIEWS"
+CONTEXT_TABLE = "AVALANCHE_DB.AVALANCHE_SCHEMA.CUSTOMER_REVIEWS"
 DEFAULT_HISTORY_LENGTH = 5
 
 # --- Data Loading (Cached) ---
