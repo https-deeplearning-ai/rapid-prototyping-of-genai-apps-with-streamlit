@@ -24,4 +24,5 @@ To run the Streamlit app for [Module 1 Lab 2](https://github.com/https-deeplearn
 ```
 streamlit run streamlit_app.py
 ```
-The lab video will walk you through how to update the code and more functionality. 
+## Work Through the Lab Notebook
+Once you're setup is ready, download the Jupyter Notebook for a step-by-step walkthrough building the app you learned about in the lab video, and adding some additional functionality. 
