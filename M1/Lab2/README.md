@@ -22,4 +22,4 @@ To run the Streamlit app for [Module 1 Lab 2](https://github.com/https-deeplearn
 streamlit run streamlit_app.py
 ```
 ## Work Through the Lab Notebook
-Once your setup is ready, download the [Jupyter Notebook]([M1/Lab2/M1_Lab2.ipynb](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/blob/master/M1/Lab2/M1_Lab2.ipynb)) for a step-by-step walkthrough of building the app you learned about in the lab video, and adding some additional functionality. 
+Once your setup is ready, download the [Jupyter Notebook](https://github.com/https-deeplearning-ai/rapid-prototyping-of-genai-apps-with-streamlit/blob/master/M1/Lab2/M1_Lab2.ipynb) for a step-by-step walkthrough of building the app you learned about in the lab video, and adding some additional functionality. 
