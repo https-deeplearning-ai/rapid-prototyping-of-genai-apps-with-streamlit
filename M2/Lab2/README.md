@@ -1,21 +1,46 @@
-# M2 Lab 2 Deploying Your Prototype Internally on Snowflake
+# Lab: Sentiment Analysis with Snowflake Copilot
 
-In Module 2 Lab 2, you're aggregating all that you've built in prior labs into this Streamlit app that you'll deploy to Streamlit in Snowflake (SiS).
+Welcome to your second lab in the Avalanche GenAI project!  
+In this lab, you'll learn how to use Snowflake Copilot — the built-in AI assistant — to generate SQL, explore your data, and analyze customer sentiment.
 
-**Before starting this lab, make sure you have created the Avalanche database, schema and stage that we built in the previous lab.**
-1. Log in to Snowflake Snowsight
-2. In the left sidebar, click on "Projects" > "Streamlit" to bring up the Streamlit workspace
-3. In the bright blue button on the top-right corner, click on "+ Streamlit App" 
-4. A "Create Streamlit App" window pops up. 
-    Enter the following:
-    - App title
-    - App location: choose your avalanche database and schema
-    - Leave app warehouse at default “COMPUTE_WH”
-5. Click on Create
-6. An example Streamlit app should appear
-7. Erase the code from the existing example app
-8. In this Github repo folder, copy the code from the file called streamlit_app.py
-9. Paste this code into the left code editor panel where you just deleted the example code from. 
-10. Click on Run
+---
 
+## What You’ll Do
+
+- Connect to your Avalanche database
+- Use Copilot to write SQL queries
+- Calculate average sentiment by product
+- Visualize results using Snowsight
+- Practice using Copilot to explore and analyze new datasets
+
+---
+
+## Requirements
+
+✅ Snowflake account with Copilot enabled  
+✅ Copilot available in SQL Worksheets  
+✅ Cleaned reviews table with sentiment scores  
+✅ Python Snowpark Notebooks for extra testing
+
+---
+
+## Getting Started
+
+1. Open the [`M2_Lab2_Copilot_Sentiment_Analysis.ipynb`](./M2_Lab2_Copilot_Sentiment_Analysis.ipynb) notebook.
+2. Follow the instructions step-by-step.
+3. Use the prompts provided to interact with Copilot.
+4. Try modifying the prompts to explore other insights.
+
+---
+
+## Pro Tips
+
+- Ask clear, specific questions — treat Copilot like a teammate.
+- Use Copilot to explain queries, fix syntax, or recommend optimizations.
+- If Copilot can’t access your database, double-check your active schema selection.
+- You can switch between SQL Worksheets and Notebooks depending on your workflow.
+
+---
+
+Let’s see what insights you can uncover!
 You’ll walk through this code in more detail with the help of the accompanying lab walkthrough video for Module 2 Lab 2. 
