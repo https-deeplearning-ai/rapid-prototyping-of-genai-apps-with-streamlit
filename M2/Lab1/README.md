@@ -1,45 +1,44 @@
-# M2 Lab 1 
+# Avalanche Lab: Analyzing Shipping Logs with Snowflake + Python
 
-In this lab, you'll prepare the Avalanche data namely the Customer Reviews subset from an unstructured format to a structured format in Snowflake Notebooks.
+Welcome to the Avalanche prototype lab! In this exercise, you’ll analyze raw shipping log data to extract useful insights about delivery patterns, delays, and customer experiences.
 
-## Setup
+This lab is designed as part of the **Rapid Prototyping with GenAI + Streamlit on Snowflake** course. You’ll use Snowflake’s Notebook environment along with Python to:
 
-Follow the instructions provided in `setup.sql` to create a database, schema, stage as well as read files for the Avalanche project.
+- Ingest and parse raw markdown data
+- Clean and structure the shipping records
+- Extract relevant fields like delivery status, dates, product names, and customer satisfaction
+- Load the structured data into a Snowflake table
+- Optionally explore the results using GenAI or Streamlit
 
-## Using the Data
+## 📂 Files
 
-Once this is completed, the Avalanche data can be accessed from the `@avalanche_db.avalanche_schema.customer_reviews` stage directly.
+- `lab_shipping_logs.ipynb` — Main Jupyter notebook for the lab
+- `shipping-logs.md` — Raw markdown file containing sample shipping log data
 
-For example, to list contents of the stage run this SQL query:
+## ✅ Prerequisites
 
-```SQL 
-ls @avalanche_db.avalanche_schema.customer_reviews;
-``` 
+- A working Snowflake account with access to Snowsight Notebooks
+- Python enabled in your Snowflake environment
+- Snowpark Python and `python-dotenv` installed (if running locally)
+- Basic familiarity with Python, Pandas, and SQL
 
-To read contents of a file:
+## 🚀 Instructions
 
-```SQL 
--- Read single file
-`SELECT
-  SNOWFLAKE.CORTEX.PARSE_DOCUMENT(
-    @avalanche_db.avalanche_schema.customer_reviews,
-    'review-01.docx',
-    {'mode': 'layout'}
-  ) AS layout;`
-```
+1. Upload both `lab_shipping_logs.ipynb` and `shipping-logs.md` to your Snowflake Notebook or local Jupyter environment.
+2. Open the notebook and follow the steps to:
+   - Read in the markdown file
+   - Parse the logs using string operations or regex
+   - Structure the data into a usable Pandas or Snowflake DataFrame
+   - Load the data into a Snowflake table
+3. Optionally, you can use Snowflake's Cortex GenAI features or Streamlit to visualize results.
 
-## Data Processing
+## 🎯 Learning Objectives
 
-Next, you'll use the structured data to create a bar chart to visualize the daily sentiment score and the product sentiment score.
+By completing this lab, you’ll be able to:
+- Handle semi-structured markdown data in Snowflake Notebooks
+- Transform real-world messy data into structured formats
+- Build Snowflake pipelines that are GenAI-ready
 
-- PARSE_DOCUMENT function to extract text and data from unstructured DOCX files.
-- SENTIMENT function to calculate the sentiment score of extracted customer review text
-- SUMMARIZE function to return a concise summary of the customer review text
-- TRANSLATE: function to translate given text from/to any supported language
+---
 
-## Data Visualization
-Then, you'll create a bar chart to visualize the daily sentiment score and the product sentiment score.
-
-
-## Running the Notebook
-Download the Notebook in `IPYNB` format (`customer-reviews.ipynb`) and upload to your Snowflake Snowsight account to run the Snowflake Notebook.
+Feel free to fork, extend, or integrate this lab into your own GenAI app!
