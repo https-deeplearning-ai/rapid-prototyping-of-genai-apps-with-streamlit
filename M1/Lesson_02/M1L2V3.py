@@ -1,29 +1,11 @@
-''' 
-
-From your command line, you can set up a Python virtual environment for your project using the following steps:
-# 1. Open the VSCode terminal (View > Terminal).
-
-# 2. Run the following command to create a virtual environment:
-python -m venv venv
-
-# 3. Activate the virtual environment:
-# On Windows:
-'venv\Scripts\activate'
-
-# On macOS/Linux:
-source venv/bin/activate
-
-# 4. VSCode should detect and use the virtual environment automatically.
-
-# 5. Install the required packages:
-pip install -r requirements.txt 
-'''
-
-
 # import packages
 from dotenv import load_dotenv
 import os
 import openai
+import streamlit as st
+
+st.title("Hello, GenAI!")
+st.write("This is your first Streamlit app.")
 
 # load environment variables from .env file
 load_dotenv()
@@ -41,4 +23,4 @@ response = client.chat.completions.create(
 )
 
 # print the response from OpenAI
-print(response.choices[0].message.content)
+st.write(response.choices[0].message.content)
