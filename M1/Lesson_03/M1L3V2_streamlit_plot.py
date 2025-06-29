@@ -48,3 +48,7 @@ with col2:
 if "df" in st.session_state:
     st.subheader("Dataset Preview")
     st.dataframe(st.session_state["df"].head())
+    
+    st.subheader("Sentiment Score by Product")
+    grouped = st.session_state["df"].groupby(["PRODUCT"])["SENTIMENT_SCORE"].mean()
+    st.bar_chart(grouped)

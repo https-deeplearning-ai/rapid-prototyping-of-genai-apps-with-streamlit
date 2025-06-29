@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import re
 import os
+import plotly.express as px
 
 
 # Helper function to get dataset path
@@ -48,3 +49,19 @@ with col2:
 if "df" in st.session_state:
     st.subheader("Dataset Preview")
     st.dataframe(st.session_state["df"].head())
+    
+    st.subheader("Sentiment Score Distribution")
+    # Create Plotly histogram
+    fig = px.histogram(
+        st.session_state["df"], 
+        x="SENTIMENT_SCORE", 
+        nbins=10,
+        title="Distribution of Sentiment Scores",
+        labels={"SENTIMENT_SCORE": "Sentiment Score", "count": "Frequency"}
+    )
+    fig.update_layout(
+        xaxis_title="Sentiment Score",
+        yaxis_title="Frequency",
+        showlegend=False
+    )
+    st.plotly_chart(fig, use_container_width=True)

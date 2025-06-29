@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import re
 import os
+import matplotlib.pyplot as plt
 
 
 # Helper function to get dataset path
@@ -48,3 +49,12 @@ with col2:
 if "df" in st.session_state:
     st.subheader("Dataset Preview")
     st.dataframe(st.session_state["df"].head())
+    
+    st.subheader("Sentiment Score Distribution")
+    # Create matplotlib histogram
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.hist(st.session_state["df"]["SENTIMENT_SCORE"], bins=10, edgecolor='black', alpha=0.7)
+    ax.set_xlabel('Sentiment Score')
+    ax.set_ylabel('Frequency')
+    ax.set_title('Distribution of Sentiment Scores')
+    st.pyplot(fig)

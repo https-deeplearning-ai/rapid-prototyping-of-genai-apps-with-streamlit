@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import re
 import os
+import altair as alt
 
 
 # Helper function to get dataset path
@@ -48,3 +49,18 @@ with col2:
 if "df" in st.session_state:
     st.subheader("Dataset Preview")
     st.dataframe(st.session_state["df"].head())
+    
+    st.subheader("Sentiment Score Distribution")
+    # Create Altair histogram
+    chart = alt.Chart(st.session_state["df"]).mark_bar().add_selection(
+        alt.selection_interval()
+    ).encode(
+        alt.X("SENTIMENT_SCORE:Q", bin=alt.Bin(maxbins=10), title="Sentiment Score"),
+        alt.Y("count():Q", title="Frequency"),
+        tooltip=["count():Q"]
+    ).properties(
+        width=600,
+        height=400,
+        title="Distribution of Sentiment Scores"
+    )
+    st.altair_chart(chart, use_container_width=True)
