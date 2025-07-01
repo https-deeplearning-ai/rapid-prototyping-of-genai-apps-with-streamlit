@@ -47,13 +47,21 @@ with col2:
 
 # Display the dataset if it exists
 if "df" in st.session_state:
-    st.subheader("Dataset Preview")
-    st.dataframe(st.session_state["df"].head())
+    # Product filter dropdown
+    st.subheader("🔍 Filter by Product")
+    product = st.selectbox("Choose a product", ["All Products"] + list(st.session_state["df"]["PRODUCT"].unique()))
+    st.subheader(f"📁 Reviews for {product}")
+
+    if product != "All Products":
+        filtered_df = st.session_state["df"][st.session_state["df"]["PRODUCT"] == product]
+    else:
+        filtered_df = st.session_state["df"]
+    st.dataframe(filtered_df)
     
-    st.subheader("Sentiment Score Distribution")
+    st.subheader("Sentiment Score Distribution for {product}")
     # Create matplotlib histogram
     fig, ax = plt.subplots(figsize=(10, 6))
-    ax.hist(st.session_state["df"]["SENTIMENT_SCORE"], bins=10, edgecolor='black', alpha=0.7)
+    ax.hist(filtered_df["SENTIMENT_SCORE"], bins=10, edgecolor='black', alpha=0.7)
     ax.set_xlabel('Sentiment Score')
     ax.set_ylabel('Frequency')
     ax.set_title('Distribution of Sentiment Scores')

@@ -46,5 +46,13 @@ with col2:
 
 # Display the dataset if it exists
 if "df" in st.session_state:
-    st.subheader("Dataset Preview")
-    st.dataframe(st.session_state["df"].head())
+    # Product filter dropdown
+    st.subheader("🔍 Filter by Product")
+    product = st.selectbox("Choose a product", ["All Products"] + list(st.session_state["df"]["PRODUCT"].unique()))
+    st.subheader(f"📁 Reviews for {product}")
+
+    if product != "All Products":
+        filtered_df = st.session_state["df"][st.session_state["df"]["PRODUCT"] == product]
+    else:
+        filtered_df = st.session_state["df"]
+    st.dataframe(filtered_df)

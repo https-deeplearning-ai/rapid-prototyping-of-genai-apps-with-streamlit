@@ -4,6 +4,20 @@ import os
 import openai
 import streamlit as st
 
+@st.cache_data
+def get_response(user_prompt, temperature):
+    response = client.chat.completions.create(
+            model="gpt-4o",  # Use the latest chat model
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
+                {"role": "user", "content": user_prompt}  # Use user input as prompt
+            ],
+            temperature=temperature,  # Use the value from the slider
+            max_tokens=100  # Limit response length
+        )
+    return response
+
+
 st.title("Hello, GenAI!")
 st.write("This is your first Streamlit app.")
 
@@ -21,14 +35,6 @@ client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 with st.spinner("AI is working..."):
     if user_prompt:
-        response = client.chat.completions.create(
-            model="gpt-4o",  # Use the latest chat model
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
-                {"role": "user", "content": user_prompt}  # Use user input as prompt
-            ],
-            temperature=temperature,  # Use the value from the slider
-            max_tokens=100  # Limit response length
-        )
+        response = get_response(user_prompt, temperature)
         # print the response from OpenAI
         st.write(response.choices[0].message.content)
