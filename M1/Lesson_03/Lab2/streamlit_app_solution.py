@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Initialize OpenAI client
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = openai.OpenAI()
 
 # Helper function to get dataset path
 def get_dataset_path():
@@ -61,7 +61,7 @@ with col2:
         if "df" in st.session_state:
             try:
                 with st.spinner("Analyzing sentiment..."):
-                    st.session_state["df"]["Sentiment"] = st.session_state["df"]["SUMMARY"].apply(get_sentiment)
+                    st.session_state["df"].loc[:, "Sentiment"] = st.session_state["df"]["SUMMARY"].apply(get_sentiment)
                     st.success("Sentiment analysis completed!")
             except Exception as e:
                 st.error(f"Something went wrong: {e}")
