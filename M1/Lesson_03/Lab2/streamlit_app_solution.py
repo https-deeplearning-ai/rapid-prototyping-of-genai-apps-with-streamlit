@@ -6,11 +6,13 @@ import plotly.express as px
 import openai
 from dotenv import load_dotenv
 
+
 # Load environment variables
 load_dotenv()
 
 # Initialize OpenAI client
 client = openai.OpenAI()
+
 
 # Helper function to get dataset path
 def get_dataset_path():
@@ -19,6 +21,7 @@ def get_dataset_path():
     # Construct the path to the CSV file
     csv_path = os.path.join(current_dir, "..", "..", "..", "Avalanche", "data", "customer_reviews.csv")
     return csv_path
+
 
 # Function to get sentiment using GenAI
 @st.cache_data
@@ -39,6 +42,7 @@ def get_sentiment(text):
     except Exception as e:
         st.error(f"API error: {e}")
         return "Neutral"
+
 
 st.title("🔍 GenAI Sentiment Analysis Dashboard")
 st.write("This is your GenAI-powered data processing app.")
