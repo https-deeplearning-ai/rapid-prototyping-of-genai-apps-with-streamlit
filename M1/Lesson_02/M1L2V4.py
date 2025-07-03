@@ -13,16 +13,17 @@ client = openai.OpenAI()
 
 @st.cache_data
 def get_response(user_prompt, temperature):
-    response = client.chat.completions.create(
-            model="gpt-4o",  # Use the latest chat model
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
-                {"role": "user", "content": user_prompt}  # Use user input as prompt
-            ],
-            temperature=temperature,  # Use the value from the slider
-            max_tokens=100  # Limit response length
-        )
+    response = client.responses.create(
+        model="gpt-4o",  # Use the latest chat model
+        input=[
+            {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
+            {"role": "user", "content": user_prompt}  # Prompt
+        ],
+        temperature=temperature,  # A bit of creativity
+        max_output_tokens=100  # Limit response length
+    )
     return response
+
 
 
 st.title("Hello, GenAI!")
@@ -38,4 +39,4 @@ with st.spinner("AI is working..."):
     if user_prompt:
         response = get_response(user_prompt, temperature)
         # print the response from OpenAI
-        st.write(response.choices[0].message.content)
+        st.write(response.output[0].content[0].text)

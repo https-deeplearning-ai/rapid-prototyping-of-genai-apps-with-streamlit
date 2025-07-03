@@ -29,19 +29,21 @@ def get_sentiment(text):
     if not text or pd.isna(text):
         return "Neutral"
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "system", "content": "Classify the sentiment of the following review as exactly one word: Positive, Negative, or Neutral."},
-                {"role": "user", "content": f"What's the sentiment of this review? {text}"}
+        response = client.responses.create(
+            model="gpt-4o",  # Use the latest chat model
+            input=[
+                {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
+                {"role": "user", "content": user_prompt}  # Prompt
             ],
-            max_tokens=10,
-            temperature=0
+            temperature=temperature,  # A bit of creativity
+            max_output_tokens=100  # Limit response length
         )
-        return response.choices[0].message.content.strip()
+        return response.output[0].content[0].text.strip()
     except Exception as e:
         st.error(f"API error: {e}")
         return "Neutral"
+
+
 
 
 st.title("🔍 GenAI Sentiment Analysis Dashboard")

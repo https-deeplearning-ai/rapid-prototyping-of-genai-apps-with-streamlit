@@ -58,10 +58,11 @@ if "df" in st.session_state:
         filtered_df = st.session_state["df"]
     st.dataframe(filtered_df)
     
-    st.subheader("Sentiment Score Distribution for {product}")
-    # Create Altair histogram
-    chart = alt.Chart(filtered_df).mark_bar().add_selection(
-        alt.selection_interval()
+    st.subheader(f"Sentiment Score Distribution for {product}")
+    # Create Altair histogram using add_params instead of add_selection
+    interval = alt.selection_interval()
+    chart = alt.Chart(filtered_df).mark_bar().add_params(
+        interval
     ).encode(
         alt.X("SENTIMENT_SCORE:Q", bin=alt.Bin(maxbins=10), title="Sentiment Score"),
         alt.Y("count():Q", title="Frequency"),

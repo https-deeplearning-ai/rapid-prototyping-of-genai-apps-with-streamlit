@@ -10,15 +10,15 @@ load_dotenv()
 # load OpenAI API key from environment variables
 client = openai.OpenAI()
 
-response = client.chat.completions.create(
+response = client.responses.create(
     model="gpt-4o",  # Use the latest chat model
-    messages=[
+    input=[
         {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
         {"role": "user", "content": "Explain generative AI in one sentence."}  # Prompt
     ],
     temperature=0.7,  # A bit of creativity
-    max_tokens=100  # Limit response length
+    max_output_tokens=100  # Limit response length
 )
 
 # print the response from OpenAI
-print(response.choices[0].message.content)
+print(response.output[0].content[0].text)
