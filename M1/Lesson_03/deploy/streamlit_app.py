@@ -5,15 +5,6 @@ import re
 import os
 
 
-# Helper function to get dataset path
-def get_dataset_path():
-    # Get the current script directory
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    # Construct the path to the CSV file
-    csv_path = os.path.join(current_dir, "..", "..", "Avalanche", "data", "customer_reviews.csv")
-    return csv_path
-
-
 # Helper function to clean text
 def clean_text(text):
     text = text.lower().strip()
@@ -30,8 +21,7 @@ col1, col2 = st.columns(2)
 with col1:
     if st.button("📥 Ingest Dataset"):
         try:
-            csv_path = get_dataset_path()
-            st.session_state["df"] = pd.read_csv(csv_path)
+            st.session_state["df"] = pd.read_csv("customer_reviews.csv")
             st.success("Dataset loaded successfully!")
         except FileNotFoundError:
             st.error("Dataset not found. Please check the file path.")
