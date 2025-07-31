@@ -1,6 +1,5 @@
 # import packages
 from dotenv import load_dotenv
-import os
 import openai
 import streamlit as st
 
@@ -10,6 +9,19 @@ load_dotenv()
 
 # Initialize OpenAI client
 client = openai.OpenAI()
+
+@st.cache_data
+def get_response(user_prompt, temperature):
+    response = client.responses.create(
+            model="gpt-4o",  # Use the latest chat model
+            input=[
+                {"role": "user", "content": user_prompt}  # Prompt
+            ],
+            temperature=temperature,  # A bit of creativity
+            max_output_tokens=100  # Limit response length
+        )
+    return response
+
 
 st.title("Hello, GenAI!")
 st.write("This is your first Streamlit app.")
@@ -28,15 +40,6 @@ temperature = st.slider(
     )
 
 with st.spinner("AI is working..."):
-    if user_prompt:
-        response = client.responses.create(
-            model="gpt-4o",  # Use the latest chat model
-            input=[
-                {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
-                {"role": "user", "content": user_prompt}  # Prompt
-            ],
-            temperature=temperature,  # A bit of creativity
-            max_output_tokens=100  # Limit response length
-        )
-        # print the response from OpenAI
-        st.write(response.output[0].content[0].text)
+    response = get_response(user_prompt, temperature)
+    # print the response from OpenAI
+    st.write(response.output[0].content[0].text)

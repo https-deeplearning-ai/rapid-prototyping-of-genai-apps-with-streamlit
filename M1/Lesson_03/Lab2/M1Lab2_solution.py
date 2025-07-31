@@ -19,7 +19,7 @@ def get_dataset_path():
     # Get the current script directory
     current_dir = os.path.dirname(os.path.abspath(__file__))
     # Construct the path to the CSV file
-    csv_path = os.path.join(current_dir, "..", "..", "..", "Avalanche", "data", "customer_reviews.csv")
+    csv_path = os.path.join(current_dir, "..", "..", "..", "data", "customer_reviews.csv")
     return csv_path
 
 
@@ -32,10 +32,10 @@ def get_sentiment(text):
         response = client.responses.create(
             model="gpt-4o",  # Use the latest chat model
             input=[
-                {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
-                {"role": "user", "content": user_prompt}  # Prompt
+                {"role": "system", "content": "Classify the sentiment of the following review as exactly one word: Positive, Negative, or Neutral."},
+                {"role": "user", "content": f"What's the sentiment of this review? {text}"}
             ],
-            temperature=temperature,  # A bit of creativity
+            temperature=0,  # Deterministic output
             max_output_tokens=100  # Limit response length
         )
         return response.output[0].content[0].text.strip()
@@ -53,7 +53,7 @@ st.write("This is your GenAI-powered data processing app.")
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("📥 Ingest Dataset"):
+    if st.button("📥 Load Dataset"):
         try:
             csv_path = get_dataset_path()
             df = pd.read_csv(csv_path)

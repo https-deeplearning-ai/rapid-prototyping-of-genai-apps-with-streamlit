@@ -1,6 +1,5 @@
 # import packages
 from dotenv import load_dotenv
-import os
 import openai
 
 
@@ -13,7 +12,6 @@ client = openai.OpenAI()
 response = client.responses.create(
     model="gpt-4o",
     input=[
-        {"role": "system", "content": "You are a helpful assistant."},  # Set behavior
         {"role": "user", "content": "Explain generative AI in one sentence."}  # Prompt
     ],
     temperature=0.7,  # A bit of creativity
